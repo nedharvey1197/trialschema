@@ -1,0 +1,211 @@
+{
+    "diseases": {
+      "oncology": {
+  "primaryClassificationFields": {
+    "cancerType": ["Lung", "Breast", "Colorectal", "Melanoma", "Other"],
+    "histologicalClassification": [
+      "Adenocarcinoma",
+      "Squamous cell carcinoma",
+      "Small cell carcinoma",
+      "Large cell carcinoma",
+      "Mixed types"
+    ],
+    "stages": ["Stage I", "Stage II", "Stage III", "Stage IV"],
+    "molecularGenetics": {
+      "driverMutations": ["EGFR", "ALK", "ROS1", "KRAS", "BRAF", "HER2"],
+      "biomarkers": ["PD-L1", "TMB", "MSI-High", "HRD"]
+    },
+    "priorLinesOfTherapy": [
+      "Treatment naive",
+      "First-line",
+      "Second-line",
+      "Third-line or greater",
+      "Maintenance therapy"
+    ]
+  },
+  "primaryClassificationFieldOrder": [
+    "cancerType",
+    "histologicalClassification",
+    "stages",
+    "molecularGenetics",
+    "priorLinesOfTherapy"
+  ],
+  "primaryEndpoints": [
+    "Overall Survival (OS)",
+    "Progression-Free Survival (PFS)",
+    "Disease-Free Survival (DFS)",
+    "Objective Response Rate (ORR)",
+    "Complete Response Rate (CR)",
+    "Duration of Response (DoR)",
+    "Time to Progression (TTP)",
+    "Safety/Tolerability"
+  ],
+ "studyDesignCriteria": {
+    "trialPhases": [
+        "Phase 1",
+        "Phase 1/2",
+        "Phase 2",
+        "Phase 2/3",
+        "Phase 3",
+        "Phase 4",
+        "Pilot Study"
+    ],
+    "randomization": [
+        "Randomized",
+        "Non-randomized"
+    ],
+    "blinding": [
+        "Blinded",
+        "Open label",
+        "Double-blind",
+        "Single-blind"
+    ],
+    "trialType": [
+        "Basket trial",
+        "Umbrella trial",
+        "Platform trial",
+        "Parallel group",
+        "Crossover study"
+    ]
+},
+  "specialPopulationCriteria": [
+    "Stable brain metastases allowed",
+    "Active brain metastases allowed",
+    "No brain metastases allowed",
+    "Brain metastases required",
+    "Adequate bone marrow function",
+    "Adequate liver function",
+    "Adequate renal function",
+    "Adequate cardiac function"
+  ]
+},
+
+      "hematology": {
+        "primaryClassificationFields": {
+          "diseaseCategory": ["Leukemia", "Lymphoma", "Multiple Myeloma", "Myelodysplastic Syndromes"],
+          "molecularGenetics": {
+            "cytogenetics": ["Normal", "Complex", "Specific abnormalities (e.g., t(9;22), FLT3)"],
+            "mutations": ["NPM1", "FLT3-ITD", "IDH1/2", "BCR-ABL"]
+          },
+          "riskClassification": ["Low risk", "Intermediate risk", "High risk", "Very high risk"],
+          "priorTreatments": [
+            "Treatment naive",
+            "Prior chemotherapy",
+            "Prior targeted therapy",
+            "Prior transplant",
+            "CAR-T therapy"
+          ]
+        },
+        "primaryEndpoints": [
+          "Complete Response (CR)",
+          "Overall Response Rate (ORR)",
+          "Minimal Residual Disease (MRD)",
+          "Event-free Survival (EFS)",
+          "Overall Survival (OS)",
+          "Transfusion independence"
+        ],
+        "studyDesignCriteria": [
+          "Phase 1",
+          "Phase 2",
+          "Phase 3",
+          "Basket trial",
+          "Umbrella trial"
+        ],
+        "specialPopulationCriteria": [
+          "High-risk cytogenetics",
+          "Adequate organ function",
+          "Post-transplant settings",
+          "Pediatric patients"
+        ]
+      },
+      "cardiovascular": {
+        "primaryClassificationFields": {
+          "diseaseCategory": ["CAD", "PAD", "Heart Failure", "Arrhythmias", "Structural Heart Disease"],
+          "nyhaClass": ["Class I", "Class II", "Class III", "Class IV"],
+          "riskFactors": ["Hypertension", "Diabetes", "Dyslipidemia", "Smoking"],
+          "biomarkers": ["NT-proBNP", "Troponin", "CRP", "Lipid profile"]
+        },
+        "primaryEndpoints": [
+          "MACE",
+          "CV Death",
+          "MI",
+          "Stroke",
+          "Hospitalization",
+          "Exercise capacity",
+          "Quality of life measures"
+        ],
+        "studyDesignCriteria": [
+          "Randomized",
+          "Blinded",
+          "Phase 2",
+          "Phase 3"
+        ],
+        "specialPopulationCriteria": [
+          "Renal insufficiency",
+          "Elderly populations",
+          "Device-related conditions",
+          "Patients with LVADs"
+        ]
+      },
+      "autoimmune": {
+        "primaryClassificationFields": {
+          "diseaseCategory": [
+            "Rheumatoid Arthritis",
+            "Systemic Lupus Erythematosus",
+            "Multiple Sclerosis",
+            "IBD",
+            "Psoriasis"
+          ],
+          "diseaseActivityScores": ["DAS28", "SLEDAI", "EDSS", "Mayo Score", "PASI"],
+          "biomarkers": ["Auto-antibodies", "Inflammatory markers", "Specific disease markers"],
+          "priorTreatments": ["Conventional DMARDs", "Biologics", "Steroids"]
+        },
+        "primaryEndpoints": [
+          "Disease activity scores",
+          "Remission rates",
+          "Radiographic progression",
+          "Quality of life measures",
+          "Steroid-free remission"
+        ],
+        "studyDesignCriteria": [
+          "Phase 1",
+          "Phase 2",
+          "Phase 3",
+          "Blinded"
+        ],
+        "specialPopulationCriteria": ["Pediatric populations", "Severe disease activity"]
+      },
+      "infectiousDisease": {
+        "primaryClassificationFields": {
+          "pathogenType": ["Viral", "Bacterial", "Fungal", "Parasitic"],
+          "infectionSite": [
+            "Respiratory",
+            "Bloodstream",
+            "CNS",
+            "Skin/Soft tissue",
+            "GI tract",
+            "Urinary tract"
+          ],
+          "resistanceProfile": ["Susceptible", "MDR", "XDR", "PDR"],
+          "riskFactors": ["Immunocompromised", "Healthcare-associated", "Community-acquired"]
+        },
+        "primaryEndpoints": [
+          "Clinical cure",
+          "Microbiological eradication",
+          "Time to resolution",
+          "Mortality",
+          "Recurrence rate",
+          "Resistance development"
+        ],
+        "studyDesignCriteria": [
+          "Phase 1",
+          "Phase 2",
+          "Phase 3",
+          "Randomized",
+          "Blinded"
+        ],
+        "specialPopulationCriteria": ["Neutropenic patients", "ICU patients"]
+      }
+    }
+  }
+  
